@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+</head>
+
+<body>
+    <!-- a: anchor -->
+    <!-- 1. Liên kết đến 1 nội dung bên trong cùng 1 webpage -->
+    <div>
+        <ol>
+            <li>
+                <a href="#chaper_1">Chaper 1</a>
+            </li>
+            <li>
+                <a href="#chaper_2">Chaper 2</a>
+            </li>
+            <li>
+                <a href="#chaper_3">Chaper 3</a>
+            </li>
+        </ol>
+    </div>
+    <!-- 2. Liên kết đến 1 tài nguyên bên ngoài dự án (project) -->
+    <div>
+        <a href="https://google.com" target="_blank">Go to google</a>
+    </div>
+    <!-- 3. Liên kết đến 1 webpage khác bên trong dự án -->
+    <div>
+        <a href="home.html">Go to Home page</a>
+    </div>
+    <!-- 4. Liên kết đến 1 tài nguyên mà trình duyệt web ko xử lý được 
+        và trình duyệt web sẽ gợi ý người dùng download về để tiếp tục xử -->
+    <div>
+        <p>Please click here to <a href="sources/document.zip">download</a> technical document</p>
+        <p>Please click here to <a download="TechDoc" href="sources/FEE_React_Final.pdf">download</a> technical document</p>
+    </div>
+    <!-- 
+        media 
+        img : image
+        audio
+        video
+            src: source
+    -->
+    <img style="width: 100px;" src="media/sunflower.jpg" alt="">
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio>
+    <!-- ctrl + / -->
+    <!-- 
+        h : heading
+        h1 -> h6
+        window + arrow keys 
+     -->
+    <h2>Form and Table</h2>
+    <!-- 
+        p : paragraph: đoạn văn bản
+        mock data/ dummy data/ seeding data
+     -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem impedit accusamus laborum quae voluptas velit,
+        libero, veritatis consequatur consequuntur culpa laudantium inventore hic quo possimus incidunt asperiores
+        pariatur dolores placeat!
+    </p>
+    <!-- 
+        danh sách
+        ol: OrderList
+        ul: UnorderList
+        bên trong thẻ này thì lồng vào vào: li (list item) hoặc ol/ul khác
+        nested list
+      -->
+    <!-- alt + shift + array key up/down -->
+    <!-- keep alt + click chuột -->
+    <!-- shorthand -->
+    <ol type="i">
+        <li>Tin Quốc tế</li>
+        <li>Tin Trong nước</li>
+        <li>Tin Thể thao
+            <ul>
+                <li>Anh</li>
+                <li>Pháp</li>
+                <li>Ý</li>
+            </ul>
+        </li>
+        <li>Tin thị trường</li>
+    </ol>
+    <ul>
+        <li>Tin Quốc tế</li>
+        <li>Tin Trong nước</li>
+        <li>Tin Thể thao</li>
+        <li>Tin thị trường</li>
+    </ul>
+    <h1 id="chaper_1">Chapter 1</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur, eum ea rem nemo magnam modi quos quo dignissimos facilis in quidem, aut quas ipsam odio qui, soluta animi ab et optio iste. Esse ad ipsam itaque, commodi nam voluptatem nobis reprehenderit facere nostrum voluptates quas perferendis id quis ut molestiae praesentium autem maxime veniam magni dolore dolor soluta cupiditate! Veniam, natus debitis explicabo blanditiis hic quidem harum unde quam excepturi molestiae, illum voluptas eum impedit esse aperiam libero ipsum. Accusantium odit consequatur expedita ullam! Cum assumenda id officia neque voluptas in delectus a, accusantium est fugit saepe adipisci, sint quibusdam labore aliquid et unde reiciendis, sequi perferendis laudantium nesciunt officiis nulla? Sint amet facere eveniet animi, ipsum praesentium labore alias voluptatem ex consequatur deserunt minus culpa doloremque illo, obcaecati velit iure, itaque odio aliquid. Magni eius facilis optio est quaerat ipsa, a accusantium modi eveniet perspiciatis blanditiis minima magnam libero asperiores repellat accusamus commodi itaque facere officiis unde alias quo sequi nobis! Aliquam mollitia et, voluptas enim unde ex repellat? Reprehenderit veniam tenetur, eveniet repellendus nemo necessitatibus, explicabo nesciunt illo maiores earum accusantium quam nisi unde molestiae corrupti, recusandae id! Doloremque, modi odio. Quis adipisci dignissimos autem odio sint.</p>
+    <h1 id="chaper_2">Chapter 2</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur, eum ea rem nemo magnam modi quos quo dignissimos facilis in quidem, aut quas ipsam odio qui, soluta animi ab et optio iste. Esse ad ipsam itaque, commodi nam voluptatem nobis reprehenderit facere nostrum voluptates quas perferendis id quis ut molestiae praesentium autem maxime veniam magni dolore dolor soluta cupiditate! Veniam, natus debitis explicabo blanditiis hic quidem harum unde quam excepturi molestiae, illum voluptas eum impedit esse aperiam libero ipsum. Accusantium odit consequatur expedita ullam! Cum assumenda id officia neque voluptas in delectus a, accusantium est fugit saepe adipisci, sint quibusdam labore aliquid et unde reiciendis, sequi perferendis laudantium nesciunt officiis nulla? Sint amet facere eveniet animi, ipsum praesentium labore alias voluptatem ex consequatur deserunt minus culpa doloremque illo, obcaecati velit iure, itaque odio aliquid. Magni eius facilis optio est quaerat ipsa, a accusantium modi eveniet perspiciatis blanditiis minima magnam libero asperiores repellat accusamus commodi itaque facere officiis unde alias quo sequi nobis! Aliquam mollitia et, voluptas enim unde ex repellat? Reprehenderit veniam tenetur, eveniet repellendus nemo necessitatibus, explicabo nesciunt illo maiores earum accusantium quam nisi unde molestiae corrupti, recusandae id! Doloremque, modi odio. Quis adipisci dignissimos autem odio sint.</p>
+    <h1 id="chaper_3">Chapter 3</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur, eum ea rem nemo magnam modi quos quo dignissimos facilis in quidem, aut quas ipsam odio qui, soluta animi ab et optio iste. Esse ad ipsam itaque, commodi nam voluptatem nobis reprehenderit facere nostrum voluptates quas perferendis id quis ut molestiae praesentium autem maxime veniam magni dolore dolor soluta cupiditate! Veniam, natus debitis explicabo blanditiis hic quidem harum unde quam excepturi molestiae, illum voluptas eum impedit esse aperiam libero ipsum. Accusantium odit consequatur expedita ullam! Cum assumenda id officia neque voluptas in delectus a, accusantium est fugit saepe adipisci, sint quibusdam labore aliquid et unde reiciendis, sequi perferendis laudantium nesciunt officiis nulla? Sint amet facere eveniet animi, ipsum praesentium labore alias voluptatem ex consequatur deserunt minus culpa doloremque illo, obcaecati velit iure, itaque odio aliquid. Magni eius facilis optio est quaerat ipsa, a accusantium modi eveniet perspiciatis blanditiis minima magnam libero asperiores repellat accusamus commodi itaque facere officiis unde alias quo sequi nobis! Aliquam mollitia et, voluptas enim unde ex repellat? Reprehenderit veniam tenetur, eveniet repellendus nemo necessitatibus, explicabo nesciunt illo maiores earum accusantium quam nisi unde molestiae corrupti, recusandae id! Doloremque, modi odio. Quis adipisci dignissimos autem odio sint.</p>
+</body>
+
+</html>
