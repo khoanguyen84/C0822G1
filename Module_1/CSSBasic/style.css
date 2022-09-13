@@ -1,0 +1,70 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div, h2, h3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 5;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 5px solid red;
+    padding: 5px 6px;
+    margin: 5px;
+    /* float: left; */
+}
+
+#div_2{
+    background-color: green;
+    color: yellow;
+    
+}
+
+#div_2:hover{
+    transform: scale(1.4);
+}
+
+.div_group_1{
+    background-color: blue;
+    color: lightcoral;
+    border: 5px solid darkgoldenrod;
+}
+
+.div_group_1:hover{
+    border-radius: 20px 0px 20px 0px;
+}
+
+#s1 p{
+    color: orange;
+}
+
+input[type='checkbox']:checked{
+    transform: scale(2);
+}
+#s1 p::before{
+    content: "- ";
+}
+#s1 p::after{
+    content: "!";
+}
+
+#s2 p::first-letter{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#s2 p::first-line{
+    color: blue;
+}
+
+#s2 p::selection{
+    background-color: orange;
+    color: red;
+}
+
+ul li::marker{
+    color: red;
+}
