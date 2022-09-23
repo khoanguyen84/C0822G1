@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <div>
+        <ol id="courses"></ol>
+    </div>
+    <div id="courses_area">
+
+    </div>
+    <script>
+        // let size = Number(prompt("Enter size: "));
+        // let students = new Array(size);
+        // for(let i = 0; i < students.length; i++){
+        //     students[i] = prompt(`Enter student[${i+ 1}]: `);
+        // }
+
+        // console.log(students)
+
+        // let size = Number(prompt('Enter size: '));
+        // let numbers = new Array(size);
+        // for(let i = 0; i < numbers.length; i++){
+        //     let number;
+        //     do{
+        //         number = Number(prompt(`Enter numbers[${i}]:`))
+        //     }
+        //     while(Number.isNaN(number))
+
+        //     numbers[i] = number;
+        // }
+        // document.write(numbers);
+
+        // [min, max]
+        // Math.floor(Math.random()*(max - min + 1) + min);
+
+        // let size = Number(prompt('Enter size: '));
+        // let min = 1;
+        // let max = 20;
+        // let countOfEven = 0;
+        // let numbers = new Array(size);
+        // for (let i = 0; i < numbers.length; i++) {
+        //     numbers[i] = Math.floor(Math.random() * (max - min + 1) + min);
+        // }
+        // document.write(numbers);
+        // for (let i = 0; i < numbers.length; i++) {
+        //     if (numbers[i] % 2 == 0) {
+        //         countOfEven++;
+        //     }
+        // }
+        // document.write(`<br>Count of even numbers: ${countOfEven}`);
+
+        let courses = ["JavaScript", "ReactJS", "NodeJS", "Java", "VueJS"];
+        let coursesString = "";
+        for(let i = 0; i < courses.length; i++){
+            coursesString += `<li>${courses[i]}</li>`;
+        }
+        document.getElementById("courses").innerHTML = coursesString;
+
+        let coursesString_2 = "";
+        for(let i = 0; i < courses.length; i++){
+            coursesString_2 += `<h1><a href='#'>${courses[i]}</a></h1>`;
+        }
+
+        document.getElementById('courses_area').innerHTML = coursesString_2;
+    </script>
+</body>
+
+</html>
