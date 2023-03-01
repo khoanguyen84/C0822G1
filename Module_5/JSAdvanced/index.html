@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="prototype.js"></script>
+    <!-- <input type="text" id="content" oninput="inputValue()"> -->
+    <!-- <input type="text" id="content"> -->
+    <input type="text" oninput="inputValue(event)">
+    <p id="result"></p>
+    <table>
+        <thead>
+            <tr>
+                <th>#ID</th>
+                <th>Title</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+        <tbody id="tbPosts">
+            
+        </tbody>
+    </table>
+    <script src="fetch.js"></script>
 </body> 
 </html>
